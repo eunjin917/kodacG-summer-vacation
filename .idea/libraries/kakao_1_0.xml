@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="kakao-1.0">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/week01/backend/kakao-1.0.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
