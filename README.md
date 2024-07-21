@@ -18,7 +18,7 @@ ERD 작성 초기 구상
 - product_name(pk) 상품 이름 
 - price            가격
 - quantity         수량
-- 상품 설명         상품 설명
+- description      상품 설명
 - option           옵션
 - discount_price   할인가
   
