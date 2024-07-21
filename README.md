@@ -7,41 +7,41 @@ ERD 작성 초기 구상
 
 먼저 엔티티 선정
 
-- USER사용자( 유저 아이디 - 기본키, 유저 이름, 비밀번호, 가입일자, 주문내역)
-- user_id(pk)
-- user_name
-- password
-- sign_date
-- order_list
+ **USER 사용자**
+- user_id(pk) 유저 아이디
+- user_name   유저 이름
+- password    비밀번호
+- sign_date   가입일자
+- order_list  주문내역 *
   
-- PRODUCT 상품(상품 이름 - 기본키, 가격, 수량, 상품설명, 옵션, 할인가(톡등가))
-- product_name(pk)
-- price
-- quantity
-- 상품 설명
-- option
-- discount_price
+**PRODUCT 상품**
+- product_name(pk) 상품 이름 
+- price            가격
+- quantity         수량
+- 상품 설명         상품 설명
+- option           옵션
+- discount_price   할인가
   
-- ORDER 주문 (주문번호 - 기본키, 유저 아이디 - 외래키, 상품 이름 - 외래키, 주문 일시, 배송지)
-- order_id(pk)
-- product_name(fk)
-- user_id(fk)
-- order_date
-- destination
+ **ORDER 주문**
+- order_num(pk)      주문 번호
+- product_name(fk)  상품 이름
+- user_id(fk)       유저 아이디
+- order_date        주문 일시
+- destination       배송지
   
-- 쿠폰(상품 이름 - 외래키, 쿠폰 번호 - 기본키, 할인율, 사용기간)
-- coupon_id(pk)
-- product_name(fk)
-- discount_rate
-- use_date
+ **COUPON 쿠폰**
+- coupon_num(pk)    쿠폰 번호
+- product_name(fk)  상품 이름(쿠폰이 적용되는)
+- discount_rate     할인율
+- use_date          사용 기간
 
-- 장바구니(장바구니 ID - 기본키, 주문번호 - 외래키,  장바구니에 담긴 일시, 장바구니의 주문 수, 배송상태 총 가격 ) 
-- cart_id(pk)
-- order_id(fk)
-- cart_date
-- order_list
-- total_price
-- pay_date
+ **CART 장바구니**
+- cart_num(pk)    장바구니 번호
+- order_num(fk)   주문 번호
+- cart_date       장바구니에 담은 일시
+- order_list      주문 목록 (목록 번호가 같은 것끼리 주문 된다)
+- total_price     총 금액
+- pay_date        결제 일시
 
 
   -> 장바구니와 주문 간의 차이점? 주문도 주문에서는 어떤 유저가 어떤 상품을 주문했는지를 저장하는 엔티티이고 장바구니는 이 주문들이 합쳐진 것
