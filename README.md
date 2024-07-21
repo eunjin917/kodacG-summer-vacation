@@ -37,12 +37,6 @@ ERD 작성 초기 구상
 - total_price     총 금액
 - pay_date        결제 일시
 
--  **COUPON 쿠폰**
-- coupon_num(pk)    쿠폰 번호
-- product_name(fk)  상품 이름(쿠폰이 적용되는)
-- discount_rate     할인율
-- use_date          사용 기간
-
 **장바구니와 주문 간의 차이점? 주문도 주문에서는 어떤 유저가 어떤 상품을 주문했는지를 저장하는 엔티티이고 장바구니는 이 주문들이 합쳐진 것**
 
 **관계 정의** 
@@ -56,16 +50,16 @@ ERD 작성 초기 구상
 
 중간 테이블은 erd 에서는 어떻게 나타내는지...?
 
-**order_product (중간 테이블)**
+**order_product (중간 테이블)**   
 
-order_num (fk) 주문 번호
-product_name (fk) 상품 이름
-coupon_product (중간 테이블)
+order_num (fk) 주문 번호   
+product_name (fk) 상품 이름   
+coupon_product (중간 테이블)   
 
-**cart_product(중간 테이블)**
+**cart_product(중간 테이블)**   
 
-cart_num (fk) 장바구니 번호
-product_name (fk) 상품 이름
+cart_num (fk) 장바구니 번호   
+product_name (fk) 상품 이름   
 
   
   
