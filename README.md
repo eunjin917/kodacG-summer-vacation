@@ -14,7 +14,7 @@ ERD 작성 초기 구상
 - sign_date
 - order_list
   
-- PRODUCT 상품( 상품 이름 - 기본키, 가격, 수량, 상품설명, 옵션, 할인가(톡등가))
+- PRODUCT 상품(상품 이름 - 기본키, 가격, 수량, 상품설명, 옵션, 할인가(톡등가))
 - product_name(pk)
 - price
 - quantity
@@ -22,15 +22,27 @@ ERD 작성 초기 구상
 - option
 - discount_price
   
-- ORDER 주문 (유저 아이디 - 외래키, 상품 이름 - 외래키 주문번호 - 기본키, 주문 일시, 배송지)
+- ORDER 주문 (주문번호 - 기본키, 유저 아이디 - 외래키, 상품 이름 - 외래키, 주문 일시, 배송지)
 - order_id(pk)
 - product_name(fk)
 - user_id(fk)
 - order_date
 - destination
   
-- 쿠폰(상품 이름 - 외래키, 쿠폰 이름 - 기본키, 할인율, 사용기간)
-- 장바구니(주문번호 - 외래키, 장바구니 ID, 장바구니에 담긴 일시, 장바구니의 주문 수, 배송상태 총 가격 ) - 주문번호만 알아와도 사용자 아이디의 참조가 가능해 보인다 
+- 쿠폰(상품 이름 - 외래키, 쿠폰 번호 - 기본키, 할인율, 사용기간)
+- coupon_id(pk)
+- product_name(fk)
+- discount_rate
+- use_date
+
+- 장바구니(장바구니 ID - 기본키, 주문번호 - 외래키,  장바구니에 담긴 일시, 장바구니의 주문 수, 배송상태 총 가격 ) 
+- cart_id(pk)
+- order_id(fk)
+- cart_date
+- order_list
+- total_price
+- pay_date
+
 
   -> 장바구니와 주문 간의 차이점? 주문도 주문에서는 어떤 유저가 어떤 상품을 주문했는지를 저장하는 엔티티이고 장바구니는 이 주문들이 합쳐진 것
   
