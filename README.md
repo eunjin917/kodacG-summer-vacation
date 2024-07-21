@@ -20,7 +20,7 @@ ERD 작성 초기 구상
 - description      상품 설명
 - option           옵션
 - discount_price   할인가
-- 
+
   
  **ORDER 주문**
 - order_num(pk)     주문 번호
