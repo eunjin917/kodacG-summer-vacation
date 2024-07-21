@@ -56,7 +56,16 @@ ERD 작성 초기 구상
 
 중간 테이블은 erd 에서는 어떻게 나타내는지...?
 
-  
+**order_product (중간 테이블)**
+
+order_num (fk) 주문 번호
+product_name (fk) 상품 이름
+coupon_product (중간 테이블)
+
+**cart_product(중간 테이블)**
+
+cart_num (fk) 장바구니 번호
+product_name (fk) 상품 이름
 
   
   
