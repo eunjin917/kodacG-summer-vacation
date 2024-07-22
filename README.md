@@ -61,7 +61,12 @@ coupon_product (중간 테이블)
 cart_num (fk) 장바구니 번호   
 product_name (fk) 상품 이름   
 
-#####테이블
+**유저 테이블**
+|user_id|user_name|password|sign_date|
+|:--:|:--:|:--:|:--:|
+|1|김명성|12345678|2024-07-22|
+
+
 
 
 
