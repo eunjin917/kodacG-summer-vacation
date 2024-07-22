@@ -50,6 +50,8 @@ ERD 작성 초기 구상
 
 중간 테이블은 erd 에서는 어떻게 나타내는지...?
 
+테이블 간 정규화 필요 일단은 작성만 해보기 
+
 **order_product (중간 테이블)**   
 
 order_num (fk) 주문 번호   
@@ -75,6 +77,11 @@ product_name (fk) 상품 이름
 |order_num(pk)|product_name(fk)|user_id|order_date|delivery|
 |:--:|:--:|:--:|:--:|:--:|
 |123|에어팟|1|2024-07-23|창원|
+
+**장바구니 테이블**
+|cart_num(pk)|user_id(fk)|cart_date|order_list|total_price|pay_date|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|1번 카트|김명성|2024-07-23|여러 개 상품|500000|2024-07-23|
 
 
 
