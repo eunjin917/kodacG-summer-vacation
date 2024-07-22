@@ -62,12 +62,19 @@ cart_num (fk) 장바구니 번호
 product_name (fk) 상품 이름   
 
 **유저 테이블**
-|user_id|user_name|password|sign_date|
+|user_id(pk)|user_name|password|sign_date|
 |:--:|:--:|:--:|:--:|
 |1|김명성|12345678|2024-07-22|
 
-**주문 테이블**
+**상품 테이블**
+|product_name(pk)|price|quantity|description|option|discount_price|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|에어팟|280000|1|무선 이어폰|각인 여부 O X|270000|
 
+**주문 테이블**
+|order_num(pk)|product_name(fk)|user_id|order_date|delivery|
+|:--:|:--:|:--:|:--:|:--:|
+|123|에어팟|1|2024-07-23|창원|
 
 
 
