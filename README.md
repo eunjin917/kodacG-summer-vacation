@@ -3,4 +3,4 @@
 ### 1주차 - ERD, API 설계
 | 파이팅~!
 
-#heading sui
+# ERD 작성하기
