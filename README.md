@@ -45,7 +45,7 @@ ERD 작성 초기 구상
 - product_id(fk)        상품 아이디
 - quantity              주문 수량
 - option_id(fk)         옵션아이디(필수 x)
-- order_price           주문 시 상품 가격
+- option_description    옵션 설명
 
  **CART 장바구니**
 - cart_id(pk)    장바구니 번호
@@ -61,13 +61,15 @@ ERD 작성 초기 구상
 
 **PAYMENT 결제**
 - payment_id(pk)     결제 아이디
-- order_id(fk)       주문 아이디
 - payment_date       결제 일시
 - amount             결제 금액
 - payment_method     결제 방식
 - payment_status     결제 상태
 
-
+### ORDER_PAYMENT 테이블 속성
+- order_payment_id(pk) 주문-결제 아이디
+- order_id(fk)         주문 아이디
+- payment_id(fk)       결제 아이디디
 
 
 **관계 정의**
