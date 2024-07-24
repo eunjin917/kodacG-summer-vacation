@@ -25,7 +25,6 @@ ERD 작성 초기 구상
   
  **ORDER 주문**
 - order_id(pk)     주문 번호
-- product_name(fk)  상품 이름
 - user_id(fk)       유저 아이디
 - order_date        주문 일시
 - delivery         배송지
@@ -75,9 +74,9 @@ product_id (fk) 상품 아이디
 |1|에어팟|280000|1|무선 이어폰|각인 여부 O X|270000|
 
 **주문 테이블**
-|order_id(pk)|product_id(fk)|user_id(fk)|order_date|delivery|
-|:--:|:--:|:--:|:--:|:--:|
-|123|에어팟|1|2024-07-23|창원|
+|order_id(pk)|user_id(fk)|order_date|delivery|
+|:--:|:--:|:--:|:--:|
+|123|1|2024-07-23|창원|
 
 - 중간테이블 설정하면서 상품 아이디 잘 설정하기
 
