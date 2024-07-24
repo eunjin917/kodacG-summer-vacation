@@ -104,70 +104,21 @@ ERD 작성 초기 구상
 ## 테이블 설계 후 GPT를 통해 각 데이터를 입력한 결과
 
 <details>
-<summary>USER 테이블</summary>
+<summary>USER 및 관련 테이블</summary>
 
+### USER 테이블
 | user_id (pk) | user_name | password | email  | sign_date |
 |--------------|-----------|----------|--------|-----------|
 | 1001 (김명성) | 김명성    | password | audtjd | 2024-07-12|
 | 1011 (김태욱) | 김태욱    | pass     | xodnr  | 2024-07-13|
 
-</details>
-
-<details>
-<summary>PRODUCT 테이블</summary>
-
-| product_id (pk) | product_name   | price  | stock | description | discount_price |
-|-----------------|----------------|--------|-------|-------------|----------------|
-| 2002 (아이패드 에어)  | 아이패드 에어  | 50000  | 10    | 에어        | 45000          |
-| 2022 (아이패드 프로)  | 아이패드 프로  | 60000  | 45    | 프로        | 54000          |
-
-</details>
-
-<details>
-<summary>OPTION 테이블</summary>
-
-| option_id (pk) | product_id (fk) | option_name | additional_price |
-|----------------|------------------|-------------|------------------|
-| 3002 (셀룰러 추가) | 2002 (아이패드 에어) | 셀룰러 추가 | 20000            |
-| 3022 (용량 추가)   | 2002 (아이패드 에어) | 용량 추가   | 10000            |
-| 3003 (셀룰러 추가) | 2022 (아이패드 프로) | 셀룰러 추가 | 20000            |
-| 3023 (용량 추가)   | 2022 (아이패드 프로) | 용량 추가   | 10000            |
-
-</details>
-
-<details>
-<summary>ORDER 테이블</summary>
-
-| order_id (pk) | user_id (fk) | order_date | delivery | delivery_status | total_amount |
-|---------------|--------------|------------|----------|-----------------|--------------|
-| 4001 (명성 주문)  | 1001         | 2024-07-12 | 창원     | 배송중          | 70000        |
-| 4002 (태욱 주문)  | 1011         | 2024-07-13 | 부산     | 배송완료        | 70000        |
-
-</details>
-
-<details>
-<summary>ORDER_PRODUCT 테이블</summary>
-
-| order_product_id (pk) | order_id (fk) | product_id (fk) | quantity | option_id (fk) | option_description |
-|-----------------------|---------------|-----------------|----------|----------------|--------------------|
-| 5001 (명성 에어 - 셀룰러 추가)      | 4001          | 2002            | 1        | 3002           | 셀룰러 추가        |
-| 5002 (태욱 프로 - 용량 추가)      | 4002          | 2022            | 1        | 3023           | 용량 추가          |
-
-</details>
-
-<details>
-<summary>CART 테이블</summary>
-
+### CART 테이블
 | cart_id (pk) | user_id (fk) | cart_date  | total_price |
 |--------------|--------------|------------|-------------|
 | 6001 (명성 장바구니) | 1001         | 2024-07-12 | 70000       |
 | 6002 (태욱 장바구니) | 1011         | 2024-07-13 | 70000       |
 
-</details>
-
-<details>
-<summary>CART_ORDER 테이블</summary>
-
+### CART_ORDER 테이블
 | cart_order_id (pk) | cart_id (fk) | order_id (fk) |
 |--------------------|--------------|---------------|
 | 7001 (명성 장바구니-주문) | 6001         | 4001          |
@@ -176,22 +127,55 @@ ERD 작성 초기 구상
 </details>
 
 <details>
-<summary>PAYMENT 테이블</summary>
+<summary>PRODUCT 및 관련 테이블</summary>
 
-| payment_id (pk) | payment_date | amount | payment_method | payment_status |
-|-----------------|--------------|--------|----------------|----------------|
-| 8001 (명성 결제) | 2024-07-12   | 70000  | 신용카드       | 완료           |
-| 8011 (태욱 결제) | 2024-07-13   | 70000  | 계좌이체       | 완료           |
+### PRODUCT 테이블
+| product_id (pk) | product_name   | price  | stock | description | discount_price |
+|-----------------|----------------|--------|-------|-------------|----------------|
+| 2002 (아이패드 에어)  | 아이패드 에어  | 50000  | 10    | 에어        | 45000          |
+| 2022 (아이패드 프로)  | 아이패드 프로  | 60000  | 45    | 프로        | 54000          |
+
+### OPTION 테이블
+| option_id (pk) | product_id (fk) | option_name | additional_price |
+|----------------|------------------|-------------|------------------|
+| 3002 (셀룰러 추가) | 2002 (아이패드 에어) | 셀룰러 추가 | 20000            |
+| 3022 (용량 추가)   | 2002 (아이패드 에어) | 용량 추가   | 10000            |
+| 3003 (셀룰러 추가) | 2022 (아이패드 프로) | 셀룰러 추가 | 20000            |
+| 3023 (용량 추가)   | 2022 (아이패드 프로) | 용량 추가   | 10000            |
+
+### ORDER_PRODUCT 테이블
+| order_product_id (pk) | order_id (fk) | product_id (fk) | quantity | option_id (fk) | option_description |
+|-----------------------|---------------|-----------------|----------|----------------|--------------------|
+| 5001 (명성 에어 - 셀룰러 추가)      | 4001          | 2002            | 1        | 3002           | 셀룰러 추가        |
+| 5002 (태욱 프로 - 용량 추가)      | 4002          | 2022            | 1        | 3023           | 용량 추가          |
 
 </details>
 
 <details>
-<summary>ORDER_PAYMENT 테이블</summary>
+<summary>ORDER 및 관련 테이블</summary>
 
+### ORDER 테이블
+| order_id (pk) | user_id (fk) | order_date | delivery | delivery_status | total_amount |
+|---------------|--------------|------------|----------|-----------------|--------------|
+| 4001 (명성 주문)  | 1001         | 2024-07-12 | 창원     | 배송중          | 70000        |
+| 4002 (태욱 주문)  | 1011         | 2024-07-13 | 부산     | 배송완료        | 70000        |
+
+### ORDER_PAYMENT 테이블
 | order_payment_id (pk) | order_id (fk) | payment_id (fk) |
 |-----------------------|---------------|------------------|
 | 9001 (명성 주문 결제) | 4001          | 8001             |
 | 9011 (태욱 주문 결제) | 4002          | 8011             |
+
+</details>
+
+<details>
+<summary>PAYMENT 테이블</summary>
+
+### PAYMENT 테이블
+| payment_id (pk) | payment_date | amount | payment_method | payment_status |
+|-----------------|--------------|--------|----------------|----------------|
+| 8001 (명성 결제) | 2024-07-12   | 70000  | 신용카드       | 완료           |
+| 8011 (태욱 결제) | 2024-07-13   | 70000  | 계좌이체       | 완료           |
 
 </details>
 
