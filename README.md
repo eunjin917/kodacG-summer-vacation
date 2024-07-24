@@ -14,7 +14,7 @@ ERD 작성 초기 구상
 - sign_date   가입일자
   
 **PRODUCT 상품**
-- product_id(pk)
+- product_id(pk) 상품 아이디
 - product_name 상품 이름 
 - price            가격
 - quantity         수량
