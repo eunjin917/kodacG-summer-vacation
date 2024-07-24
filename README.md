@@ -7,6 +7,8 @@ ERD 작성 초기 구상
 
 먼저 엔티티 선정
 
+사용자, 상품, 주문, 장바구니로 선정 
+
  **USER 사용자**
 - user_id(pk) 유저 아이디
 - user_name   유저 이름
@@ -37,6 +39,20 @@ ERD 작성 초기 구상
 - total_price     총 금액
 - pay_date        결제 일시
 
+**ODDER_PRODUCT 주문-상품 중간테이블**
+- order_product_id(pk)
+- order_id(fk) 주문 번호
+- product_id(fk) 상품 아이디
+- order_quantity 주문 수량
+
+**CART_PRODUCT 장바구니- 주문 중간테이블**
+- cart_product_id(pk)
+- card_id(fk) 장바구니 번호
+- product_id(fk) - 상품 아이디
+- quantity- 장바구니에 담은 상품 수
+- order_id(fk) 주문 번호
+
+
 **장바구니와 주문 간의 차이점? 주문도 주문에서는 어떤 유저가 어떤 상품을 주문했는지를 저장하는 엔티티이고 장바구니는 이 주문들이 합쳐진 것**
 
 **관계 정의** 
@@ -52,16 +68,7 @@ ERD 작성 초기 구상
 
 테이블 간 정규화 필요 일단은 작성만 해보기 
 
-**order_product (중간 테이블)**   
 
-order_id (fk) 주문 번호   
-product_id (fk) 상품 아이디
-  
-
-**cart_product(중간 테이블)**   
-
-cart_id (fk) 장바구니 번호   
-product_id (fk) 상품 아이디   
 
 **유저 테이블**
 |user_id(pk)|user_name|password|sign_date|
