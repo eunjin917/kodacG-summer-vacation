@@ -69,10 +69,13 @@ ERD 작성 초기 구상
 ### ORDER_PAYMENT 테이블 속성
 - order_payment_id(pk) 주문-결제 아이디
 - order_id(fk)         주문 아이디
-- payment_id(fk)       결제 아이디디
+- payment_id(fk)       결제 아이디
 
 
 **관계 정의**
+
+
+
 
 
 테이블 설계 후 GPT를 통해 각 데이터를 입력한 결과
