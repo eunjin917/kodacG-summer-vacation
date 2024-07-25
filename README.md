@@ -60,7 +60,7 @@
 |------------|--------|---------------------|----------------|-----------|
 | 웰컴페이지 | GET    | /                   |                |           |
 | 회원가입   | GET    | /signup             |                |           |
-| 회원가입   | POST   | /signup             |                |           |
+| 회원가입   | POST   | /signup             |                | [자세히보기](#회원가입-post) |
 | 로그인     | POST   | /login              |                | [자세히 보기](#로그인-post)  |
 | 장바구니   | GET    | /cart               |                |           |
 | 상품정보   | GET    | /product/productsid | {productsid}   |           |
@@ -76,6 +76,14 @@
   "user password": "1234"
 }
 
+#### 회원가입 POST
+**회원가입: RequestBody**
+```json
+{
+  "user_id": "kimjiwon512@gmail.com",
+  "password": "1234",
+  "name": "김지원"
+}
 
 
 
