@@ -6,7 +6,7 @@
 
 - Member에서 장바구니 엔티티를 one-to-many.
 - Items에서 item을 one-to-many.
-- 주문 엔티티는 Member의 정보를 가져오고 Member의 장바구니들 일부 혹은 전체가져옴옴.
+- 주문 엔티티는 Member의 정보를 가져오고 Member의 장바구니들 일부 혹은 전체가져옴.
 
 #### RESTful API
 
@@ -59,6 +59,7 @@
 | 웰컴페이지 | GET    | /                   |                |           |
 | 회원가입   | GET    | /signup             |                |           |
 | 회원가입   | POST   | /signup             |                | [자세히보기](#회원가입-post) |
+| 로그인     | GET   | /login              |                | [자세히 보기](#로그인-post)  |
 | 로그인     | POST   | /login              |                | [자세히 보기](#로그인-post)  |
 | 장바구니   | GET    | /cart               |                |           |
 | 상품정보   | GET    | /product/productsid | {productsid}   |           |
