@@ -69,33 +69,13 @@
 | 주문조회   | GET    | /result/orderid     | {orderid}      |           |
 
 #### 로그인 POST
-*로그인: RequestBody*
+**로그인: RequestBody**
 ```json
 {
   "user ID": "kimjiwon512@gmial.com",
   "user password": "1234"
 }
-*로그인: ResponseBody*
-```json
-{
-  "success": false,
-  "response": null,
-  "error": {
-    "message": "회원이 아닙니다.",
-    "status": 404
-  }
-}
-*로그인: ResponseBody*
-```json
-{
-  "success": true,
-  "response": {
-    "멤버id": "",
-    "멤버이름": "",
-    "기타": "무엇을 넣어야 할지 잘 모르겠습니다.."
-  },
-  "error": null
-}
+
 
 
 
