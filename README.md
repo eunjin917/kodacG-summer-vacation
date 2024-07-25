@@ -75,7 +75,7 @@
   "user ID": "kimjiwon512@gmial.com",
   "user password": "1234"
 }
-
+```
 #### 회원가입 POST
 **회원가입: RequestBody**
 ```json
@@ -84,7 +84,7 @@
   "password": "1234",
   "name": "김지원"
 }
-
+```
 
 
 
