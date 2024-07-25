@@ -69,13 +69,13 @@
 | 주문조회   | GET    | /result/orderid     | {orderid}      |           |
 
 #### 로그인 POST
-**로그인: RequestBody**
+*로그인: RequestBody*
 ```json
 {
   "user ID": "kimjiwon512@gmial.com",
   "user password": "1234"
 }
-**로그인: ResponsetBody**
+*로그인: ResponseBody*
 ```json
 {
   "success": false,
@@ -85,7 +85,7 @@
     "status": 404
   }
 }
-**로그인: ResponseBody**
+*로그인: ResponseBody*
 ```json
 {
   "success": true,
