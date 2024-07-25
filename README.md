@@ -100,7 +100,7 @@
       "order_price": "주문 상품 가격 1"
     },
     {
-      items_name": "상품 묶음 이름 2",
+      "items_name": "상품 묶음 이름 2",
       "item_name": "상품2",
       "order_quantity": "주문 상품 수 2",
       "order_price": "주문 상품 가격 2"
