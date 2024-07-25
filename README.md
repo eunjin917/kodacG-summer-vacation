@@ -64,7 +64,7 @@
 | 장바구니   | GET    | /cart               |                |           |
 | 상품정보   | GET    | /product/productsid | {productsid}   |           |
 | 주문       | GET    | /order              |                |           |
-| 주문       | POST   | /order              |                |[자세히 보기](주문-post)  |
+| 주문       | POST   | /order              |                | [자세히 보기](주문-post)  |
 | 주문조회   | GET    | /result/orderid     | {orderid}      |           |
 
 #### 로그인 POST
