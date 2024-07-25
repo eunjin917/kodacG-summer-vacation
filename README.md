@@ -1,7 +1,8 @@
 # kodacG-summer-vacation
 
 ### 1주차 - ERD, API 설계
-![다이어그램 drawio](https://github.com/user-attachments/assets/f3925a3c-f4f7-4e3b-b159-631d75332094)
+![다이어그램 drawio](https://github.com/user-attachments/assets/7d79589c-15d6-462d-83ae-9f38767b8b10)
+
 
 
 
