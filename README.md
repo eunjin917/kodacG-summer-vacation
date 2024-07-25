@@ -65,7 +65,7 @@
 | 장바구니   | GET    | /cart               |                |           |
 | 상품정보   | GET    | /product/productsid | {productsid}   |           |
 | 주문       | GET    | /order              |                |           |
-| 주문       | POST   | /order              |                |           |
+| 주문       | POST   | /order              |                |[자세히 보기](주문-post)  |
 | 주문조회   | GET    | /result/orderid     | {orderid}      |           |
 
 #### 로그인 POST
@@ -83,6 +83,13 @@
   "user_id": "kimjiwon512@gmail.com",
   "password": "1234",
   "name": "김지원"
+}
+```
+#### 주문 POST
+**주문: RequestBody**
+```json
+{
+  
 }
 ```
 
