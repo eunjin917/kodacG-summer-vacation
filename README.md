@@ -87,7 +87,25 @@
   "user ID": "kimjiwon512@gmial.com",
   "user password": "1234"
 }
-
+***실패시
+{
+  "success": false,
+  "response": null,
+  "error": {
+    "message": "회원이 아닙니다.",
+    "status": 404
+  }
+}
+***성공시
+{
+  "success": true,
+  "response": {
+    "멤버id": "",
+    "멤버이름": "",
+    "기타": "?"
+  },
+  "error": null
+}
 
 
 
