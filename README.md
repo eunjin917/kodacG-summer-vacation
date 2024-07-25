@@ -1,10 +1,8 @@
 # kodacG-summer-vacation
 
 ### 1주차 - ERD, API 설계
-
 #### ERD
-![다이어그램 drawio](https://github.com/user-attachments/assets/85a688f0-79a0-4176-93af-47a95debaefc)
-
+![다이어그램 drawio](https://github.com/user-attachments/assets/95010866-3f99-4959-9751-01605571c7be)
 
 - Member에서 장바구니 엔티티를 one-to-many.
 - Items에서 item을 one-to-many.
