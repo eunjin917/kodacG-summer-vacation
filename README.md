@@ -1,12 +1,16 @@
 # kodacG-summer-vacation
 
 ### 1주차 - ERD, API 설계
+
+#### ERD
 ![다이어그램 drawio](https://github.com/user-attachments/assets/7d79589c-15d6-462d-83ae-9f38767b8b10)
 
 - Member에서 장바구니 엔티티를 one-to-many.
 - Items에서 item을 one-to-many.
 - 주문 엔티티는 Member의 정보를 가져오고 Member의 장바구니들 일부 혹은 전체.
 
+
+#### API
 | 기능       | 메소드 | 경로                | 파라미터       | 추가 정보 |
 |------------|--------|---------------------|----------------|-----------|
 | 웰컴페이지 | GET    | /                   |                |           |
