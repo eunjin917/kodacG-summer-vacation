@@ -75,7 +75,8 @@
   "user ID": "kimjiwon512@gmial.com",
   "user password": "1234"
 }
-- ResponseBody(실패)
+**로그인: ResponsetBody**
+```json
 {
   "success": false,
   "response": null,
@@ -84,7 +85,8 @@
     "status": 404
   }
 }
-- ResponseBody(성공)
+**로그인: ResponseBody**
+```json
 {
   "success": true,
   "response": {
