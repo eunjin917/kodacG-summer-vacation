@@ -81,12 +81,13 @@
 | 주문조회   | GET    | /result/orderid     | {orderid}      |           |
 
 #### 로그인 POST
-**로그인: JSON RequestBody**
+**로그인: RequestBody**
 ```json
 {
-  "user ID": "",
-  "user password": ""
+  "user ID": "kimjiwon512@gmial.com",
+  "user password": "1234"
 }
+
 
 
 
