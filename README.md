@@ -94,13 +94,13 @@
   "delivery_request": "배송 요청 사항",
   "cart_list": [
     {
-      "itmes_name": "상품 묶음 이름 1",
+      "items_name": "상품 묶음 이름 1",
       "item_name": "상품1",
       "order_quantity": "주문 상품 수 1",
       "order_price": "주문 상품 가격 1"
     },
     {
-      itemse_name": "상품 묶음 이름 2",
+      items_name": "상품 묶음 이름 2",
       "item_name": "상품2",
       "order_quantity": "주문 상품 수 2",
       "order_price": "주문 상품 가격 2"
