@@ -6,7 +6,7 @@
 
 - Member에서 장바구니 엔티티를 one-to-many.
 - Items에서 item을 one-to-many.
-- 주문 엔티티는 Member의 정보를 가져오고 Member의 장바구니들 일부 혹은 전체.
+- 주문 엔티티는 Member의 정보를 가져오고 Member의 장바구니들 일부 혹은 전체가져옴옴.
 
 #### RESTful API
 
