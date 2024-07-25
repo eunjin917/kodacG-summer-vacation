@@ -59,7 +59,7 @@
 | 웰컴페이지 | GET    | /                   |                |           |
 | 회원가입   | GET    | /signup             |                |           |
 | 회원가입   | POST   | /signup             |                | [자세히보기](#회원가입-post) |
-| 로그인     | GET   | /login              |                | [자세히 보기](#로그인-post)  |
+| 로그인     | GET   | /login              |                |   
 | 로그인     | POST   | /login              |                | [자세히 보기](#로그인-post)  |
 | 장바구니   | GET    | /cart               |                |           |
 | 상품정보   | GET    | /product/productsid | {productsid}   |           |
