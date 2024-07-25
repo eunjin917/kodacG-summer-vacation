@@ -87,7 +87,15 @@
 **주문: RequestBody**
 ```json
 {
-  
+  "delivery_name": "기본 배송지 이름",
+  "phone_number": "핸드폰 번호",
+  "delivery_address": "기본 배송지 주소",
+  "delivery_request": "배송 요청 사항",
+  "cart_list": [
+    {"item1": "상품1"},
+    {"item2": "상품2"}
+  ],
+  "total_order_amount": "총 주문 금액"
 }
 ```
 
