@@ -2,7 +2,7 @@
 
 ### 1주차 - ERD, API 설계
 
-#### ERD
+#### <ERD>
 ![다이어그램 drawio](https://github.com/user-attachments/assets/85a688f0-79a0-4176-93af-47a95debaefc)
 
 
@@ -10,7 +10,7 @@
 - Items에서 item을 one-to-many.
 - 주문 엔티티는 Member의 정보를 가져오고 Member의 장바구니들 일부 혹은 전체.
 
-#### RESTful API
+#### <RESTful API>
 
 **REST**  
 - 소프트웨어 프로그램 아키텍처의 한 형식
@@ -55,7 +55,7 @@
 
 
 
-#### API
+#### <API>
 | 기능       | 메소드 | 경로                | 파라미터       | 추가 정보 |
 |------------|--------|---------------------|----------------|-----------|
 | 웰컴페이지 | GET    | /                   |                |           |
