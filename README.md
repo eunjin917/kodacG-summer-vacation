@@ -82,9 +82,9 @@
 	"success": false,
 	"response": null,
 	"error": {
-    "message": "회원이 아닙니다."
-    "status": 404
-  }
+    		"message": "회원이 아닙니다."
+    		"status": 404
+	}
 }
 ```
 ```json
