@@ -2,7 +2,8 @@
 
 ### 1주차 - ERD, API 설계
 #### ERD
-![다이어그램 drawio](https://github.com/user-attachments/assets/95010866-3f99-4959-9751-01605571c7be)
+![다이어그램 drawio](https://github.com/user-attachments/assets/c2c1562d-f750-4635-8c0b-4618928f1160)
+
 
 - Member에서 장바구니 엔티티를 one-to-many.
 - Items에서 item을 one-to-many.
@@ -75,6 +76,32 @@
   "user password": "1234"
 }
 ```
+**로그인: ResponseBody**
+```json
+{
+	"success": false,
+	"response": null,
+	"error": {
+    "message": "회원이 아닙니다."
+    "status": 404
+  }
+}
+```
+```json
+{
+	"success": true,
+	"response": {
+		"memberNum" : 123456
+		"memberId":"jiwonkim512@gmail.com"
+		"memberPassword": ****,
+		"memberName":"kimjiwon"
+	}
+	"error": null
+}
+```
+
+
+
 #### 회원가입 POST
 **회원가입: RequestBody**
 ```json
@@ -110,6 +137,7 @@
   ],
 }
 ```
-
-
+#### ResponseBody??
+```
+ResponseBody는 
 
