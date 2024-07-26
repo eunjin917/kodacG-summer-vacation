@@ -99,13 +99,20 @@ ERD 작성 초기 구상
 
 **결제와 주문 1:1~n 관계**
 결제와 주문은 장바구니에 들어간 주문이 여러가지일 때와 한가지 일때 또는 장바구니에서 
-선택한 주문만을 결제처리하는 내역을 남기기 위해서 중간 테이블을 사용한다
+선택한 주문만을 결제처리하는 내역을 남기기 위해서 중간 테이블을 사용한다   
+
+**설정한 관계를 바탕으로 그린 ERD(draw.io)**
+
+![image](https://github.com/user-attachments/assets/5407cfbf-ca43-43b1-a3d0-1cd7a4fc0fb5)
+
+![image](https://github.com/user-attachments/assets/b8d015b2-8015-40a5-baf7-5fab7b19848d)   
+
 
 
 **테이블 설계 후 GPT를 통해 각 데이터를 입력한 결과**
 
-편의상 테이블이 나열대로 순서대로 유저는 1000번대, 상품은 2000번대, 옵션은 3000번대를 아이디로 설정하여   
-어떤 테이블에 어떤 내용이 들어갈지 임의로 가시화했다   
+편의상 테이블이 나열되는 순서대로 유저는 1000번대, 상품은 2000번대, 옵션은 3000번대를   
+기본키로 설정하여 어떤 테이블에 어떤 내용이 들어갈지 임의로 가시화했다   
 
 <details>
 <summary>USER 및 관련 테이블</summary>
@@ -183,10 +190,6 @@ ERD 작성 초기 구상
 
 </details>
 
-![image](https://github.com/user-attachments/assets/5407cfbf-ca43-43b1-a3d0-1cd7a4fc0fb5)
-
-![image](https://github.com/user-attachments/assets/b8d015b2-8015-40a5-baf7-5fab7b19848d)
-
 
 **API 설계를 위한 기능 정리**
 
@@ -202,6 +205,7 @@ ERD 작성 초기 구상
 - 회원 탈퇴
 
 -> ( 로그인에는 서버가 사용자를 인증한 후 보내주는 JWT 형식의 토큰이 응답에 포함되어야 한다)   
+
 **상품 관련 기능**
 - 상품 등록
 - 상품 검색
@@ -250,4 +254,6 @@ discount_price : 10 percentage
 
 전달해야하는 값을 JSON 데이터의 형식은 잘 몰라서 위와 같은 형식으로 대부분 작성한 후 gpt를 통해 json의 형식을 변경했다 
 위 데이터는 상품 등록 시 들어가야하는 데이터이다
+
+
   
