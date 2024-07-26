@@ -65,7 +65,7 @@
 | 장바구니   | GET    | /cart               |                | return "템플릿파일 명"          |
 | 상품정보   | GET    | /product/productsid | {productsid}   | return "템플릿파일 명"          |
 | 주문       | GET    | /order              |                | return "템플릿파일 명"          |
-| 주문       | POST   | /order              |                | [자세히 보기](주문-post)  |
+| 주문       | POST   | /order              |                | [자세히 보기](#주문-post)  |
 | 주문조회   | GET    | /result/orderid     | {orderid}      | return "템플릿파일 명"          |
 
 #### 로그인 POST
@@ -136,7 +136,5 @@
   ],
 }
 ```
-#### ResponseBody??
-```
-ResponseBody는 
+
 
