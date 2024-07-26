@@ -253,8 +253,74 @@ description: pro 6 generation
 discount_price : 10 percentage
 
 
-전달해야하는 값을 JSON 데이터의 형식은 잘 몰라서 위와 같은 형식으로 대부분 작성한 후 gpt를 통해 json의 형식을 변경했다 
+전달해야하는 값을 JSON 데이터의 형식은 잘 몰라서 위와 같은 형식으로 대부분 작성한 후 gpt를 통해 json의 형식으로 변경했다 
 위 데이터는 상품 등록 시 들어가야하는 데이터이다
 
 
-  
+
+# 
+
+[회원가입](https://www.notion.so/9c965b03bd0241369b74f6d5f5e4ca1d?pvs=21)
+
+[로그인](https://www.notion.so/fe766b140e91484fb1020d11f7c73f1c?pvs=21)
+
+[유저 정보 ](https://www.notion.so/4be0e299eeb3423ca41fc19957536686?pvs=21)
+
+[유저 정보 수정](https://www.notion.so/3fa0f0ad1a6e4706a22dc514fa4a1752?pvs=21)
+
+[회원 탈퇴](https://www.notion.so/bb34df286b7a4300aa700f642d7cd277?pvs=21)
+
+[](https://www.notion.so/2b17465b32824587ada3db073f26b3e8?pvs=21)
+
+[상품 등록](https://www.notion.so/ffe91e195710484388f544df1eb240e3?pvs=21)
+
+[상품 검색](https://www.notion.so/8611b6d54fce4ad5a14a09ca0884e689?pvs=21)
+
+[상품 수정](https://www.notion.so/dc11ab2393034c00b307fac6ccfb261a?pvs=21)
+
+[상품 삭제](https://www.notion.so/4eeee727c9624a41a01b4e212ef18927?pvs=21)
+
+[](https://www.notion.so/d18b31fa86b54fb784ee7efd376f69ab?pvs=21)
+
+[주문 생성](https://www.notion.so/5efdbbb0c07f4bac930822da44a90166?pvs=21)
+
+[주문 조회](https://www.notion.so/301fca9c625e40289d3f63dd57fdce13?pvs=21)
+
+[주문 수정](https://www.notion.so/a1f5ef5213c443869d321659fa6f3335?pvs=21)
+
+[주문 취소](https://www.notion.so/2f2499aadeb149a8a7e303fa8f810d1e?pvs=21)
+
+[배송 상태 조회](https://www.notion.so/ad5a71427caa46ab9b72e0b0d68e48b2?pvs=21)
+
+[](https://www.notion.so/b35ae2420f754bc8a5beb213780b3b3c?pvs=21)
+
+[옵션 등록](https://www.notion.so/a27c931c9b8548d7a4d21ba31f09b283?pvs=21)
+
+[옵션 수정](https://www.notion.so/35b0ebe92c4742a78d700a015678df95?pvs=21)
+
+[옵션 삭제 ](https://www.notion.so/dfe040cdb90449e6bf3ba2a02738df5d?pvs=21)
+
+[](https://www.notion.so/10b3f30357e44c558e3c7cc519cad530?pvs=21)
+
+[장바구니 담기](https://www.notion.so/daf94dfce8534352b55568a2049d2073?pvs=21)
+
+[장바구니 조회](https://www.notion.so/a798dd0e29db4893aa16e7ef8aa04b66?pvs=21)
+
+[장바구니 비우기](https://www.notion.so/6db78b9e6fab4f09a0679e76c61913a2?pvs=21)
+
+[](https://www.notion.so/1ed983687fd7469cad711f84ec6e0f50?pvs=21)
+
+[결제 처리(등록) ](https://www.notion.so/f2af97bb32eb4cc0916da8d5245382df?pvs=21)
+
+[결제 내역 조회](https://www.notion.so/2babffb786814deca1318beaa22d7bd7?pvs=21)
+
+[결제 상태 조회](https://www.notion.so/14177ffefdd34d64a6a395a6e1c7b16d?pvs=21)
+
+[결제 방식 변경](https://www.notion.so/a9748eb83ed647a69587ef6a4508dfc5?pvs=21)
+
+[결제 취소](https://www.notion.so/706a386edfe548f190ae5e36e1f206b6?pvs=21)
+
+
+
+
+
