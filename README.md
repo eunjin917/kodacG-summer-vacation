@@ -39,6 +39,7 @@ ERD 작성 초기 구상
 
 **ORDER_PRODUCT 주문-상품 중간 테이블**
 - order_product_id(pk)  주문 -상품 아이디
+- 
 - order_id(fk)          주문 번호
 - product_id(fk)        상품 아이디
 - quantity              주문 수량
