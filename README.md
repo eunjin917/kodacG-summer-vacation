@@ -73,10 +73,10 @@
 ```json
 {
   "user ID": "kimjiwon512@gmial.com",
-  "user password": "1234"
+  "user password": "****"
 }
 ```
-**로그인: ResponseBody**
+**로그인: ResponseBody(잘 모르겠습니다..)**
 ```json
 {
 	"success": false,
@@ -93,7 +93,6 @@
 	"response": {
 		"memberNum" : 123456
 		"memberId":"jiwonkim512@gmail.com"
-		"memberPassword": ****,
 		"memberName":"kimjiwon"
 	}
 	"error": null
