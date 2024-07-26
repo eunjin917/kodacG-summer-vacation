@@ -97,16 +97,18 @@
       "items_name": "상품 묶음 이름 1",
       "item_name": "상품1",
       "order_quantity": "주문 상품 수 1",
-      "order_price": "주문 상품 가격 1"
+      "order_price": "주문 상품 가격 1",
+      "total_item_price": "총 가격1"
     },
     {
       "items_name": "상품 묶음 이름 2",
       "item_name": "상품2",
       "order_quantity": "주문 상품 수 2",
-      "order_price": "주문 상품 가격 2"
+      "order_price": "주문 상품 가격 2",
+      "total_item_price" : "총 가격2"
     }
   ],
-  "total_order_amount": "총 주문 금액"
+  "total_order_price": "총 주문 금액"
 }
 ```
 
