@@ -106,7 +106,8 @@ ERD 작성 초기 구상
 
 ![image](https://github.com/user-attachments/assets/5407cfbf-ca43-43b1-a3d0-1cd7a4fc0fb5)
 
-![image](https://github.com/user-attachments/assets/b8d015b2-8015-40a5-baf7-5fab7b19848d)   
+![image](https://github.com/user-attachments/assets/0faa4878-a8f1-4ea9-957c-f80c15e65281)
+
 
 
 
