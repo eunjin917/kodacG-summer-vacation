@@ -57,16 +57,16 @@
 
 | 기능       | 메소드 | 경로                | 파라미터       | 추가 정보 |
 |------------|--------|---------------------|----------------|-----------|
-| 웰컴페이지 | GET    | /                   |                |           |
-| 회원가입   | GET    | /signup             |                |           |
+| 웰컴페이지 | GET    | /                   |                | return "템플릿파일 명"         |
+| 회원가입   | GET    | /signup             |                | return 템플릿파일(method:post로 제출?)          |
 | 회원가입   | POST   | /signup             |                | [자세히보기](#회원가입-post) |
-| 로그인     | GET   | /login              |                |   
+| 로그인     | GET   | /login              |                | return "템플릿파일 명"  
 | 로그인     | POST   | /login              |                | [자세히 보기](#로그인-post)  |
-| 장바구니   | GET    | /cart               |                |           |
-| 상품정보   | GET    | /product/productsid | {productsid}   |           |
-| 주문       | GET    | /order              |                |           |
+| 장바구니   | GET    | /cart               |                | return "템플릿파일 명"          |
+| 상품정보   | GET    | /product/productsid | {productsid}   | return "템플릿파일 명"          |
+| 주문       | GET    | /order              |                | return "템플릿파일 명"          |
 | 주문       | POST   | /order              |                | [자세히 보기](주문-post)  |
-| 주문조회   | GET    | /result/orderid     | {orderid}      |           |
+| 주문조회   | GET    | /result/orderid     | {orderid}      | return "템플릿파일 명"          |
 
 #### 로그인 POST
 **로그인: RequestBody**
