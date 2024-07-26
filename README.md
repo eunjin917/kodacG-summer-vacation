@@ -108,7 +108,6 @@
       "total_item_price" : "총 가격2"
     }
   ],
-  "total_order_price": "총 주문 금액"
 }
 ```
 
