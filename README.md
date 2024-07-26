@@ -76,4 +76,7 @@ RESTful API의 이점
 ![스크린샷 2024-07-26 114339](https://github.com/user-attachments/assets/b8d3cd07-2f9b-4018-9e1c-a6a858ea6f40)
 
 
+### API
+[제목 없는 데이터베이스](https://www.notion.so/dc193a226de74e1a9b072922f378b6df?pvs=21)
+
 
