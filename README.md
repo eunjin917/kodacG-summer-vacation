@@ -69,6 +69,76 @@ ERD 작성 초기 구상
 - order_id(fk)         주문 아이디
 - payment_id(fk)       결제 아이디
 
+  <details>
+<summary><strong>USER 사용자</strong></summary>
+user_id (pk): 유저 아이디
+user_name: 유저 이름
+password: 비밀번호
+email: 이메일
+sign_date: 가입일자
+</details>
+<details>
+<summary><strong>PRODUCT 상품</strong></summary>
+product_id (pk): 상품 아이디
+product_name: 상품 이름
+price: 가격
+stock: 재고 수량
+description: 상품 설명
+discount_price: 할인가
+</details>
+<details>
+<summary><strong>OPTION 옵션</strong></summary>
+option_id: 옵션의 아이디
+product_id (fk): 상품의 아이디
+option_name: 옵션 이름 (예: 빨간색, OO추가)
+additional_price: 옵션 추가금
+</details>
+<details>
+<summary><strong>ORDER 주문</strong></summary>
+order_id (pk): 주문 번호
+user_id (fk): 유저 아이디
+order_date: 주문 일시
+delivery: 배송지
+total_amount: 총 주문금액
+delivery_status: 배송 상태
+</details>
+<details>
+<summary><strong>ORDER_PRODUCT 주문-상품 중간 테이블</strong></summary>
+order_product_id (pk): 주문-상품 아이디
+order_id (fk): 주문 번호
+product_id (fk): 상품 아이디
+quantity: 주문 수량
+option_id (fk): 옵션 아이디 (필수 아님)
+option_description: 옵션 설명
+</details>
+<details>
+<summary><strong>CART 장바구니</strong></summary>
+cart_id (pk): 장바구니 번호
+user_id (fk): 유저 아이디
+cart_date: 장바구니에 담은 일시
+total_price: 총 금액
+</details>
+<details>
+<summary><strong>CART_ORDER 장바구니-주문 중간 테이블</strong></summary>
+cart_order_id (pk): 장바구니-주문 아이디
+cart_id (fk): 장바구니 아이디
+order_id (fk): 주문 아이디
+</details>
+<details>
+<summary><strong>PAYMENT 결제</strong></summary>
+payment_id (pk): 결제 아이디
+payment_date: 결제 일시
+amount: 결제 금액
+payment_method: 결제 방식
+payment_status: 결제 상태
+</details>
+<details>
+<summary><strong>ORDER_PAYMENT 주문-결제 중간 테이블</strong></summary>
+order_payment_id (pk): 주문-결제 아이디
+order_id (fk): 주문 아이디
+payment_id (fk): 결제 아이디
+</details>
+
 ### 도메인 모델들 간의 관계 
 
 **관계 정의**
