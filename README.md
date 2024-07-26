@@ -260,6 +260,8 @@ discount_price : 10 percentage
 위 데이터는 상품 등록 시 들어가야하는 데이터이다
 
 
+https://www.notion.so/pusan-dev/1-API-41df5e1987ee4ef38eea6b28356f10bf?p=4be0e299eeb3423ca41fc19957536686&pm=s
+
 
 
 
