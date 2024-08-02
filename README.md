@@ -92,6 +92,9 @@ ERD 작성 초기 구상
 ![image](https://github.com/user-attachments/assets/7ab9c9ab-8cbc-4872-a5a6-257640446134)
 
 
+![image](https://github.com/user-attachments/assets/f2db2062-dac4-4171-adc7-e8d6c2af9505)
+
+
 **테이블 설계 후 GPT를 통해 각 데이터를 입력한 결과**
 
 편의상 테이블이 나열되는 순서대로 유저는 1000번대, 상품은 2000번대, 옵션은 3000번대를   
