@@ -7,7 +7,7 @@ ERD 작성 초기 구상
 
 먼저 도메인 모델 선정 - > 사용자, 상품, 옵션, 주문, 장바구니, 결제 등...
 
-### 도메인 모델들의 속성 정리   
+#### 도메인 모델들의 속성 정리   
  **USER 사용자**
 - user_id(pk) 유저 아이디
 - user_name   유저 이름
@@ -71,7 +71,7 @@ ERD 작성 초기 구상
 - payment_id(fk)       결제 아이디
 
 
-### 도메인 모델들 간의 관계 
+#### 도메인 모델들 간의 관계 
 
 **관계 정의**
 
@@ -121,13 +121,13 @@ ERD 작성 초기 구상
 <details>
 <summary>USER 및 관련 테이블</summary>
 
-### USER 테이블
+#### USER 테이블
 | user_id (pk) | user_name | password | email  | sign_date |
 |--------------|-----------|----------|--------|-----------|
 | 1001 (김명성) | 김명성    | password | audtjd | 2024-07-12|
 | 1011 (김태욱) | 김태욱    | pass     | xodnr  | 2024-07-13|
 
-### CART 테이블
+#### CART 테이블
 | cart_id (pk) | user_id (fk) | cart_date  | total_price |
 |--------------|--------------|------------|-------------|
 | 6001 (명성 장바구니) | 1001         | 2024-07-12 | 70000       |
@@ -144,13 +144,13 @@ ERD 작성 초기 구상
 <details>
 <summary>PRODUCT 및 관련 테이블</summary>
 
-### PRODUCT 테이블
+#### PRODUCT 테이블
 | product_id (pk) | product_name   | price  | stock | description | discount_price |
 |-----------------|----------------|--------|-------|-------------|----------------|
 | 2002 (아이패드 에어)  | 아이패드 에어  | 50000  | 10    | 에어        | 45000          |
 | 2022 (아이패드 프로)  | 아이패드 프로  | 60000  | 45    | 프로        | 54000          |
 
-### OPTION 테이블
+#### OPTION 테이블
 | option_id (pk) | product_id (fk) | option_name | additional_price |
 |----------------|------------------|-------------|------------------|
 | 3002 (셀룰러 추가) | 2002 (아이패드 에어) | 셀룰러 추가 | 20000            |
@@ -169,13 +169,13 @@ ERD 작성 초기 구상
 <details>
 <summary>ORDER 및 관련 테이블</summary>
 
-### ORDER 테이블
+#### ORDER 테이블
 | order_id (pk) | user_id (fk) | order_date | delivery | delivery_status | total_amount |
 |---------------|--------------|------------|----------|-----------------|--------------|
 | 4001 (명성 주문)  | 1001         | 2024-07-12 | 창원     | 배송중          | 70000        |
 | 4002 (태욱 주문)  | 1011         | 2024-07-13 | 부산     | 배송완료        | 70000        |
 
-### ORDER_PAYMENT 테이블
+#### ORDER_PAYMENT 테이블
 | order_payment_id (pk) | order_id (fk) | payment_id (fk) |
 |-----------------------|---------------|------------------|
 | 9001 (명성 주문 결제) | 4001          | 8001             |
@@ -186,7 +186,7 @@ ERD 작성 초기 구상
 <details>
 <summary>PAYMENT 테이블</summary>
 
-### PAYMENT 테이블
+#### PAYMENT 테이블
 | payment_id (pk) | payment_date | amount | payment_method | payment_status |
 |-----------------|--------------|--------|----------------|----------------|
 | 8001 (명성 결제) | 2024-07-12   | 70000  | 신용카드       | 완료           |
@@ -259,6 +259,7 @@ discount_price : 10 percentage
 전달해야하는 값을 JSON 데이터의 형식은 잘 몰라서 위와 같은 형식으로 대부분 작성한 후 gpt를 통해 json의 형식으로 변경했다 
 위 데이터는 상품 등록 시 들어가야하는 데이터이다
 
+```
 
 https://www.notion.so/pusan-dev/1-API-41df5e1987ee4ef38eea6b28356f10bf?p=4be0e299eeb3423ca41fc19957536686&pm=s
 
