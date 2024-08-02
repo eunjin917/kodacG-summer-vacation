@@ -89,10 +89,7 @@ ERD 작성 초기 구상
 
 
 **설정한 관계를 바탕으로 그린 ERD(draw.io)**
-![image](https://github.com/user-attachments/assets/7ab9c9ab-8cbc-4872-a5a6-257640446134)
-
-
-![image](https://github.com/user-attachments/assets/f2db2062-dac4-4171-adc7-e8d6c2af9505)
+![image](https://github.com/user-attachments/assets/2377985e-326b-4d56-9871-02a833e37e11)
 
 
 **테이블 설계 후 GPT를 통해 각 데이터를 입력한 결과**
