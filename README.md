@@ -22,6 +22,7 @@ ERD 작성 초기 구상
 - price            가격
 - description      상품 설명
 - discount_price   할인가
+- 이 부분이 계산된 필드 조금 더 생각해보기
 
 **OPTION 옵션**
 - option_id        옵션의 아이디
@@ -49,6 +50,7 @@ ERD 작성 초기 구상
  **CART 장바구니**
 - cart_id(pk)    장바구니 번호
 - user_id(fk)     유저 아이디
+- 무엇을 담았는지에 대한 내용이 부족. order_product_ID를 가져올까? 조금 더 생각해보기 
 - cart_date       장바구니에 담은 일시
 - total_price     총 금액
 
