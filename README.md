@@ -97,6 +97,8 @@
 	}
 	"error": null
 }
+  ],
+}
 ```
 
 
@@ -138,9 +140,7 @@
 | https://scratch-library-74f.notion.site/1-aeba30e7970145119f5231c27c8b2d1d?pvs=4 (맨 아래에 DTO, Entity 예시를 작성했습니다.)
 =======
 
-  ],
-}
-```
+
 
 
 >>>>>>> 6c979c73559f4b61394f974e0050de536a36f297
