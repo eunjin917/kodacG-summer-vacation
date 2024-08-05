@@ -1,12 +1,6 @@
 # kodacG-summer-vacation
 
 ### 1주차 - ERD, API 설계
-<<<<<<< HEAD
-| 여기에 작성해주세요
-
-### 2주차 - 상품 관련 DTO 및 ENTITY 구현
-| https://scratch-library-74f.notion.site/1-aeba30e7970145119f5231c27c8b2d1d?pvs=4 (맨 아래에 DTO, Entity 예시를 작성했습니다.)
-=======
 #### ERD
 ![다이어그램 drawio](https://github.com/user-attachments/assets/c2c1562d-f750-4635-8c0b-4618928f1160)
 
@@ -139,6 +133,11 @@
       "order_price": "주문 상품 가격 2",
       "total_item_price" : "총 가격2"
     }
+
+### 2주차 - 상품 관련 DTO 및 ENTITY 구현
+| https://scratch-library-74f.notion.site/1-aeba30e7970145119f5231c27c8b2d1d?pvs=4 (맨 아래에 DTO, Entity 예시를 작성했습니다.)
+=======
+
   ],
 }
 ```
