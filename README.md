@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/4acaea93-f5fe-42b7-973f-9ed84fa0e742)# kodacG-summer-vacation
 
 ### 1주차 - ERD, API 설계
 | 여기에 작성해주세요
