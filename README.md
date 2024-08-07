@@ -8,7 +8,7 @@
 **ERD 재설계**
 ![image](https://github.com/user-attachments/assets/dfa490ef-3067-4faf-a443-ae44e1040bef)
 
--> 확실히 엔티티와 DTO를 작성하면서 조금 보완이 되는 느낌이다. 계산된 필드는 제거했고 옵션은 등록을 위해서 남겨두었다   
+-> 확실히 엔티티와 DTO를 작성하면서 조금 보완이 되는 느낌이다. 계산된 필드는 제거했고 옵션은 등록을 위해서 남겨두었다
 
 반정규화 
 
@@ -38,10 +38,21 @@
 
 **Entity 설계 과정**
 
-1. 엔티티가 가질 속성을 정의   
-2. 데이터의 무결성 조건을 정의 (ex nullable = false, uniqueConstraints = @UniqueConstraint(name = " uk_variable_name", ColumnNames = "variable_name")
-3. 기본키 생성(IDENTITY 전략 선택)
-4. 각 엔티티의 관계에 따라 @ManyToOne, @OneToMany 등의 관계를 정의, 각 엔티티에서 양방향으로 정의
-5. 객체 생성 패턴으로 @Builder 선택
+- 엔티티가 가질 속성을 정의   
+- 데이터의 무결성 조건을 정의 (ex nullable = false, uniqueConstraints = @UniqueConstraint(name = " uk_variable_name", ColumnNames = "variable_name")
+- 기본키 생성(IDENTITY 전략 선택)
+- 각 엔티티의 관계에 따라 @ManyToOne, @OneToMany 등의 관계를 정의, 각 엔티티에서 양방향으로 정의
+- 객체 생성 패턴으로 @Builder 선택
 
+**DTO 설계 과정**
+처음에는 각각의 기능에 따른 클래스를 선언하여 필요한 것들을 필드로 가지고, 생성자를 통해서만 값을 지정하는 방식으로 설계했다    
+-> 레코드를 사용하여 더 편하게 코드를 작성했다   
+
+- 엔티티 객체를 매개변수로 받아 getter를 통해 생성자에 값을 저장
+- 한번씩 로그인과 같이 필요한 매개변수가 정해져 있는 경우에는 이메일, 비밀번호만 매개변수로 한 생성자를 만듬
+- 각각의 엔티티 간의 관계에 유념해서 외래키로 값을 가지고 오는 경로를 확인
+- 클래스의 필드는 불변 객체로, 값을 변경하는 것은 생성자를 통해서만(Dto는 setter를 사용해도 되려나..?)
+  
+
+**API 수정 **
 
