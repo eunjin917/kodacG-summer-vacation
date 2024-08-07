@@ -45,4 +45,3 @@ public class Order {
         this.delivery_state = delivery_state;
     }
 }
-}
