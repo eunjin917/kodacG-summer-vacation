@@ -18,11 +18,11 @@ import java.util.stream.Collectors;
 public class ProductDto {
 
     // 상품 등록
-    public class productRegist {
-        private String productName;
-        private String productDesc;
-        private int price;
-        private String image;
+    public static class productRegist {
+        private final String productName;
+        private final String productDesc;
+        private final int price;
+        private final String image;
 
         public productRegist(String productName, String productDesc, int price, String image) {
             this.productName = productName;
@@ -33,10 +33,10 @@ public class ProductDto {
     }
 
     // 상품 검색
-    public class productSearch {
-        private String productName;
-        private String productDesc;
-        private String image;
+    public static class productSearch {
+        private final String productName;
+        private final String productDesc;
+        private final String image;
         private Set<OptionDto> options; // OptionDto는 Option 엔티티를 대신할 DTO 클래스
 
         public productSearch(Product product) {
@@ -44,16 +44,16 @@ public class ProductDto {
             this.productDesc = product.getProductDesc();
             this.image = product.getImage();
             this.options = product.getOptions().stream()
-                    .map(option -> new OptionDto(option)) // OptionDto 클래스가 필요함
+                    .map(option -> new OptionDto(option)) //  엔티티를 Dto로 만들고 set 리스트에 저장
                     .collect(Collectors.toSet());
         }
     }
 
     // 상품 페이지 전체 조회
-    public class productAllSearch {
-        private String productName;
-        private String productDesc;
-        private String image;
+    public static class productAllSearch {
+        private final String productName;
+        private final String productDesc;
+        private final String image;
         private int page; // 페이지 번호
 
         public productAllSearch(Product product, int page) {
@@ -65,11 +65,11 @@ public class ProductDto {
     }
 
     // 상품 수정
-    public class productUpdate {
-        private String productName;
-        private String productDesc;
-        private String image;
-        private int price;
+    public static class productUpdate {
+        private final String productName;
+        private final String productDesc;
+        private final String image;
+        private final int price;
 
         public productUpdate(String productName, String productDesc, String image, int price) {
             this.productName = productName;

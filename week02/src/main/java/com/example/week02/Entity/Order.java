@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-@NoArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 
 @Entity
@@ -29,8 +29,6 @@ public class Order {
 
     @Column(nullable = false)
     private LocalDateTime orderDate;
-
-
 
     @Column(nullable = false)
     private String deliveryStatus;

@@ -1,7 +1,10 @@
 package com.example.week02.Dtos;
 
+import com.example.week02.Entity.Option;
 import lombok.Getter;
-
+//- 옵션 등록
+//- 옵션 수정
+//- 옵션 삭제
 
 @Getter
 public class OptionDto {
@@ -17,12 +20,12 @@ public class OptionDto {
         this.stock = option.getStock();
     }
 
-    // 옵션 등록
+    // 옵션 등록, 이미 만들어진 엔티티 객체가 있다면 그것으로 매개변수로 받아도 될듯
     @Getter
     public static class OptionRegist {
-        private String optionName;
-        private int optionPrice;
-        private int stock;
+        private final String optionName;
+        private final int optionPrice;
+        private final int stock;
 
         public OptionRegist(String optionName, int optionPrice, int stock) {
             this.optionName = optionName;
@@ -31,12 +34,12 @@ public class OptionDto {
         }
     }
 
-    // 옵션 수정
+    // 옵션 수정, 수정할 내용을 매개변수로
     @Getter
     public static class OptionUpdate {
-        private String optionName;
-        private int optionPrice;
-        private int stock;
+        private final String optionName;
+        private final int optionPrice;
+        private final int stock;
 
         public OptionUpdate(String optionName, int optionPrice, int stock) {
             this.optionName = optionName;
@@ -48,8 +51,8 @@ public class OptionDto {
     // 옵션 삭제
     @Getter
     public static class OptionDelete {
-        private String optionName;
-        private String productName;
+        private final String optionName;
+        private final String productName;
 
         public OptionDelete(String optionName, String productName) {
             this.optionName = optionName;

@@ -7,16 +7,16 @@ package com.example.week02.Entity;
 //- price            가격
 //- description      상품 설명
 
-import com.example.week02.Dtos.Option;
 import com.example.week02.Dtos.OptionDto;
 import jakarta.persistence.*;
+import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import java.util.*;
 import java.util.stream.Collectors;
 
-@NoArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 
 @Entity

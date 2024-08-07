@@ -8,11 +8,12 @@ package com.example.week02.Entity;
 //- option_description    옵션 설명
 
 import jakarta.persistence.*;
+import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 
 @Entity
@@ -21,7 +22,7 @@ public class OrderProduct {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int OrderProductId;
+    private int orderProductId;
 
     @Column(nullable = false)
     private int quantity;
