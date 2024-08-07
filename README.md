@@ -63,5 +63,7 @@
 - 클래스의 필드는 불변 객체로, 값을 변경하는 것은 생성자를 통해서만(
   
 
-**API 수정 **
+**API 수정**
+
+https://www.notion.so/pusan-dev/2-API-42133cdcdb894e11b8ec17ec32c0ebe4
 
