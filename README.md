@@ -3,7 +3,7 @@
 | 여기에 작성해주세요
 
 ### 2주차 - 상품 관련 DTO 및 ENTITY 구현
-| https://scratch-library-74f.notion.site/1-aeba30e7970145119f5231c27c8b2d1d?pvs=4 (맨 아래에 DTO, Entity 예시를 작성했습니다.)
+
 
 **ERD 재설계**
 ![image](https://github.com/user-attachments/assets/edab4b0e-b0e0-428f-b087-73115e5e8fc0)
@@ -65,5 +65,5 @@
 
 **API 수정**
 
-https://www.notion.so/pusan-dev/2-API-42133cdcdb894e11b8ec17ec32c0ebe4
+[https://www.notion.so/pusan-dev/2-API-42133cdcdb894e11b8ec17ec32c0ebe4](https://www.notion.so/pusan-dev/2-API-42133cdcdb894e11b8ec17ec32c0ebe4)
 
