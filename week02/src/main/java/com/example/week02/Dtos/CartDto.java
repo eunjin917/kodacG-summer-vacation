@@ -38,11 +38,10 @@ public class CartDto {
         }
     }
     // 장바구니 비우기
-    public record cartDelete(int cartId, List<Integer> itemId, int totalPrice){
+    public record cartDelete(int cartId){
         public cartDelete(Cart cart){
-            this(cart.getCartId(),
-                    cart.getItems().stream().map(OrderProduct :: getOrderProductId).collect(Collectors.toList()),
-                    cart.getTotal_price());
+            this(cart.getCartId());
+
         }
     }
 }

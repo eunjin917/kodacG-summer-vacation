@@ -9,6 +9,8 @@
     import lombok.AccessLevel;
     import lombok.Getter;
     import lombok.NoArgsConstructor;
+
+    import java.time.LocalDateTime;
     import java.util.*;
 
     import java.time.LocalDate;
@@ -33,5 +35,10 @@
         // 주문상품과의 관계
         @OneToMany(mappedBy = "cart",cascade = CascadeType.REMOVE,orphanRemoval = true)
         private List<OrderProduct> items = new ArrayList<>();
+
+        public Cart(int total_price, LocalDateTime cartDate){
+            this.total_price = total_price;
+            cartDate = LocalDateTime.now();
+        }
 
     }

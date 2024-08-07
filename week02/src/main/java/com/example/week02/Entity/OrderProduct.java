@@ -48,6 +48,12 @@ public class OrderProduct {
     @JoinColumn(name = "cart_id",nullable = false)
     private Cart cart;
 
+    //결제와의 관계
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "payment_id",nullable = false)
+    private Payment payment;
+
+
     @Builder
     public OrderProduct(int quantity, String optionDescription, Order order, Product product,
     int totalPrice) {
