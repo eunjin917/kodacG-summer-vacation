@@ -6,7 +6,8 @@
 | https://scratch-library-74f.notion.site/1-aeba30e7970145119f5231c27c8b2d1d?pvs=4 (맨 아래에 DTO, Entity 예시를 작성했습니다.)
 
 **ERD 재설계**
-![image](https://github.com/user-attachments/assets/dfa490ef-3067-4faf-a443-ae44e1040bef)
+![image](https://github.com/user-attachments/assets/edab4b0e-b0e0-428f-b087-73115e5e8fc0)
+
 
 -> 확실히 엔티티와 DTO를 작성하면서 조금 보완이 되는 느낌이다. 계산된 필드는 제거했고 옵션은 등록을 위해서 남겨두었다
 
@@ -59,7 +60,7 @@
 - 엔티티 객체를 매개변수로 받아 getter를 통해 생성자에 값을 저장
 - 한번씩 로그인과 같이 필요한 매개변수가 정해져 있는 경우에는 이메일, 비밀번호만 매개변수로 한 생성자를 만듬
 - 각각의 엔티티 간의 관계에 유념해서 외래키로 값을 가지고 오는 경로를 확인
-- 클래스의 필드는 불변 객체로, 값을 변경하는 것은 생성자를 통해서만(Dto는 setter를 사용해도 되려나..?)
+- 클래스의 필드는 불변 객체로, 값을 변경하는 것은 생성자를 통해서만(
   
 
 **API 수정 **
