@@ -1,4 +1,4 @@
-package com.example.kakao.order;
+package com.example.week02;
 
 import com.example.week02.OrderPay;
 import com.example.week02.OrderProduct;
