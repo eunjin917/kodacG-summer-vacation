@@ -11,6 +11,7 @@ import java.time.*;
 - 주문 수정
 - 주문 취소
 - 배송 상태 조회
+
 //  order_id(pk)     주문 번호
 //- user_id(fk)      유저 아이디
 //- order_date       주문 일시
@@ -90,10 +91,14 @@ public class OrderDto {
     // 배송 상태 조회
     @Getter
     public static class orderStatus{
+        private final int orderId;
+        private final int userId;
         private final String delivery;
         private final String status;
 
         public orderStatus(Order order){
+            orderId = order.getOrderId();
+            userId = order.getUser().getUserId();
             delivery = order.getDelivery();
             status  = order.getDeliveryStatus();
         }
@@ -101,6 +106,39 @@ public class OrderDto {
 
     }
 
+    // 주문하기
+    public record registOrder(int userId, LocalDateTime orderDate, String delivery, String deliveryStatus) {
+        public registOrder(Order order) {
+            this(order.getUser().getUserId(), LocalDateTime.now(), order.getDelivery(), order.getDeliveryStatus());
+        }
+    }
 
+    // 주문 조회
+    public record infoOrder(int userId, int orderId, LocalDateTime orderDate, String delivery, String deliveryStatus) {
+        public infoOrder(Order order) {
+            this(order.getUser().getUserId(), order.getOrderId(), order.getOrderDate(), order.getDelivery(), order.getDeliveryStatus());
+        }
+    }
+
+    // 주문 수정
+    public record updateUser(int userId, int orderId, LocalDateTime orderDate, String delivery, String deliveryStatus) {
+        public updateUser(Order order, String delivery) {
+            this(order.getUser().getUserId(), order.getOrderId(), order.getOrderDate(), delivery, order.getDeliveryStatus());
+        }
+    }
+
+    // 주문 취소
+    public record deleteOrder(int userId, int orderId) {
+        public deleteOrder(Order order) {
+            this(order.getUser().getUserId(), order.getOrderId());
+        }
+    }
+
+    // 배송 상태 조회
+    public record statusOrder(int orderId, String delivery, String status) {
+        public statusOrder(Order order) {
+            this(order.getUser().getUserId(), order.getDelivery(), order.getDeliveryStatus());
+        }
+    }
 
 }

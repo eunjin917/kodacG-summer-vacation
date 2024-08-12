@@ -15,7 +15,7 @@
     public class UserDto {
 
 
-        // 회원가입 얘도 그러면 그냥 레코드로 쓸까..?
+        // 추후에 레코드로 작성하기
         @Getter
         public static class userSign{
 
@@ -50,12 +50,14 @@
 
         // 유저 정보 조회
         @Getter
-        public static class userDto{
+        public static class userInfo{
+            private final int userId;
             private final String userName;
             private final String email;
             private final LocalDateTime signDate;
 
-            public userDto(User user){
+            public userInfo(User user){
+                userId = user.getUserId();
                 userName = user.getName();
                 email = user.getEmail();
                 signDate = LocalDateTime.now();
@@ -67,11 +69,11 @@
         @Getter
         public static class userUpdate{
 
-            private final String userName;
+            private final int userId;
             private final String email;
 
-            public userUpdate(String userName, String email){
-                this.userName = userName;
+            public userUpdate(int userId, String email){
+                this.userId = userId;
                 this.email = email;
             }
 
@@ -79,13 +81,46 @@
         // 회원 탈퇴
         @Getter
         public static class userOut{
-            private final String userName;
-            private final String email;
 
-            public userOut(String userName, String email){
-                this.userName = userName;
-                this.email = email;
+            private final int userId;
+
+            public userOut(int userId){
+                this.userId = userId;
+
             }
         }
 
+        // 회원가입
+        public record signUser(String userName, String password, String email){
+            public signUser(User user){
+                this(user.getName(),user.getPassword(),user.getEmail());
+            }
+        }
+        // 로그인
+        public record loginUser(String email, String password){
+            public loginUser(User user){
+                this(user.getEmail(),user.getPassword());
+            }
+
+        }
+        // 유저 정보 조회
+        public record infoUser(int userId, String userName, String email, LocalDateTime signDate){
+            public infoUser(User user){
+                this(user.getUserId(),user.getName(), user.getEmail(),user.getSignDate());
+            }
+        }
+
+        // 유저 정보 수정
+        public record updateUser(int userId, String email){
+            public updateUser(User user){
+                this(user.getUserId(), user.getEmail());
+            }
+        }
+        // 회원 탈퇴
+
+        public record deleteUser(int userId){
+            public deleteUser(User user){
+                this(user.getUserId());
+            }
+        }
     }

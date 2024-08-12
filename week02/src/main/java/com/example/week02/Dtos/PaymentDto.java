@@ -37,9 +37,9 @@ public class PaymentDto {
 
     }
     // 결제 세부사항 수정
-    public record payUpdate(String method, String status){
+    public record payUpdate(int paymentId , String method, String status){
         public payUpdate(Payment payment){
-            this(payment.getPayment_method(), payment.getPayment_status());
+            this(payment.getPaymentId(),payment.getPayment_method(), payment.getPayment_status());
         }
 
     }
