@@ -58,9 +58,38 @@
 -> 추후에 레코드를 사용하여 코드를 수정했다.  
 
 - 엔티티 객체를 매개변수로 받아 getter를 통해 생성자에 값을 저장
-- 한번씩 로그인과 같이 필요한 매개변수가 정해져 있는 경우에는 이메일, 비밀번호만 매개변수로 한 생성자를 만듬
+- 한번씩 로그인과 같이 필요한 매개변수가 정해져 있는 경우에는 이메일, 비밀번호만 매개변수로 한 생성자를 만듬 -- 좀 더 알아볼 것   
 - 각각의 엔티티 간의 관계에 유념해서 외래키로 값을 가지고 오는 경로를 확인
-- 클래스의 필드는 불변 객체로, 값을 변경하는 것은 생성자를 통해서만(
+- 클래스의 필드는 불변 객체로, 값을 변경하는 것은 생성자를 통해서만 -- 레코드로 코드를 재작성함   
+
+**과제 진행하면서 잘 모르겠는 것**    
+UserDto
+```
+
+public record loginUser(String email, String password){
+            public loginUser(User user){
+                this(user.getEmail(),user.getPassword());
+            }
+
+// 위 레코드에서는 유저의 객체를 생성자로 받아 get 메소드를 통해서 값을 저장하고 있고 
+@Getter
+        public static class userLogin{
+
+            public final String email;
+            public final String password;
+
+            public userLogin(String email, String password){
+                this.email = email;
+                this.password = password;
+            }
+
+        }
+
+// 하단의 정적 클래스는 로그인에 필요한 값만 생성자의 매개변수로 받아서 값을 저장한다
+// 이때 엔티티를 통해서 위와 같이 값을 가져오는 것이 맞는지 사용자의 입장에서 아래 코드와 같이 작성하는 것이
+// 맞는지 둘중 어느 방식이 사용되어야 하는지 잘 모르겠다.... 그래서 일단은 전반적으로 DTO에 두가지 양식을 모두 작성했다.
+
+```
   
 
 **API 수정**
