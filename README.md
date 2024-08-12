@@ -3,7 +3,7 @@
 | 여기에 작성해주세요
 
 ### 2주차 - 상품 관련 DTO 및 ENTITY 구현
-| https://scratch-library-74f.notion.site/1-aeba30e7970145119f5231c27c8b2d1d?pvs=4 (맨 아래에 DTO, Entity 예시를 작성했습니다.)
+
 
 **ERD 재설계**
 ![image](https://github.com/user-attachments/assets/edab4b0e-b0e0-428f-b087-73115e5e8fc0)
@@ -14,12 +14,12 @@
 **반정규화**
 
 - 시스템의 성능향상과 개발과 운영의 단순화를 위해 중복, 통합, 분리 등을 수행하는 데이터 모델링의 기법
-- 저의 경우는 옵션테이블에 들어갔던 옵션 추가 금액을 계산된 필드로 사용했습니다
+- 저의 경우는 상품테이블에 할인율이라는 속성을 계산된 필드로 사용했습니다
 
   https://velog.io/@dddooo9/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B0%98%EC%A0%95%EA%B7%9C%ED%99%94#%EB%B0%98%EC%A0%95%EA%B7%9C%ED%99%94-%EA%B8%B0%EB%B2%95
   반정규화 참고 블로그입니다.
 
--> 계산된 필드를 사용하지 않고 옵션이 들어간 금액을 그냥 저장하는 것이 더 단순하다고 생각해서 계산된 필드를 제거했습니다.
+-> // 조금 더 고민해보기
 
 **API 재설계**
 
@@ -63,5 +63,7 @@
 - 클래스의 필드는 불변 객체로, 값을 변경하는 것은 생성자를 통해서만(
   
 
-**API 수정 **
+**API 수정**
+
+[https://www.notion.so/pusan-dev/2-API-42133cdcdb894e11b8ec17ec32c0ebe4](https://www.notion.so/pusan-dev/2-API-42133cdcdb894e11b8ec17ec32c0ebe4)
 
