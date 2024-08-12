@@ -15,7 +15,7 @@ public class ProductOption {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id", nullable = false)
-    private Products product;
+    private Product product;
 
     @Column(nullable = false)
     private String productType;
@@ -27,7 +27,7 @@ public class ProductOption {
     private int productQuantity;
 
     @Builder
-    public ProductOption(long id, Products product, String productType, String shippingMethod, int productQuantity) {
+    public ProductOption(long id, Product product, String productType, String shippingMethod, int productQuantity) {
         this.id = id;
         this.product = product;
         this.productType = productType;

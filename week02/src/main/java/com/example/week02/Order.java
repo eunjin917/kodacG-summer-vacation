@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private long orderid;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
@@ -28,8 +28,8 @@ public class Order {
     private String paymentMethod;
 
     @Builder
-    public Order(long id, User user, LocalDateTime orderDate, int totalPrice, String paymentMethod) {
-        this.id = id;
+    public Order(long orderid, User user, LocalDateTime orderDate, int totalPrice, String paymentMethod) {
+        this.orderid = orderid;
         this.user = user;
         this.orderDate = orderDate;
         this.totalPrice = totalPrice;

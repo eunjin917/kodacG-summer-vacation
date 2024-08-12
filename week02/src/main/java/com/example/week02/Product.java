@@ -6,10 +6,10 @@ import lombok.*;
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Entity
-public class Products {
+public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private long productid;
 
     @Column(nullable = false)
     private String productName;
@@ -23,8 +23,8 @@ public class Products {
     private int ShippingCost;
 
     @Builder
-    public Products(long id, String productName, int price, String image, int ShippingCost) {
-        this.id = id;
+    public Product(long productid, String productName, int price, String image, int ShippingCost) {
+        this.productid = productid;
         this.productName = productName;
         this.price = price;
         this.image = image;

@@ -34,7 +34,7 @@ public class User {
     private String deliveyAddress;
 
     @Builder
-    public User(String userId, String userPassword, String name, int point, String phoneNumber, String email, String deliveyAddress) {
+    public User(long id, String userId, String userPassword, String name, int point, String phoneNumber, String email, String deliveyAddress) {
         this.id = id;
         this.userId = userId;
         this.userPassword = userPassword;
