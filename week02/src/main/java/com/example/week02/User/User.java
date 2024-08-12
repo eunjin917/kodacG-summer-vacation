@@ -1,4 +1,4 @@
-package com.example.week02;
+package com.example.week02.User;
 
 import jakarta.persistence.*;
 import lombok.Builder;

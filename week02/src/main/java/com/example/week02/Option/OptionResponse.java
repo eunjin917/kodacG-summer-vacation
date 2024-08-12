@@ -1,4 +1,4 @@
-package com.example.week02;
+package com.example.week02.Option;
 
 import lombok.Getter;
 import lombok.Setter;

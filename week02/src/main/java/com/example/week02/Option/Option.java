@@ -1,5 +1,6 @@
-package com.example.week02;
+package com.example.week02.Option;
 
+import com.example.week02.Product;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;

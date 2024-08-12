@@ -1,7 +1,5 @@
-package com.example.week02;
+package com.example.week02.Order;
 
-import com.example.week02.OrderPay;
-import com.example.week02.OrderProduct;
 import lombok.Getter;
 import lombok.Setter;
 

@@ -1,7 +1,6 @@
-package com.example.week02;
+package com.example.week02.Cart;
 
-import com.example.week02.product.Product;
-import com.example.week02.Cart;
+import com.example.week02.Option.OptionDTO;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -28,7 +27,6 @@ public class CartDTO {
         }
     }
 
-    // DTO for products within the cart
     @Getter
     @Setter
     public static class CartProductDTO {

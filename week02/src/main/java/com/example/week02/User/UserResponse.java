@@ -1,6 +1,6 @@
-package com.example.week02;
+package com.example.week02.User;
 
-import com.example.week02.cart.Cart;
+import com.example.week02.Cart.Cart;
 import lombok.Getter;
 import lombok.Setter;
 

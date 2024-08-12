@@ -1,4 +1,4 @@
-package com.example.week02;
+package com.example.week02.Pay;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
