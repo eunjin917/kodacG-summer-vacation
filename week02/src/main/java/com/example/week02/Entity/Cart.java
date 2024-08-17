@@ -19,7 +19,7 @@
     @Getter
 
     @Entity
-    @Table(name = "cart_tb")
+    @Table(name = "cart")
     public class Cart {
 
         @Id

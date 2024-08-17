@@ -8,6 +8,8 @@ package com.example.week02.Entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+
 import java.time.LocalDateTime;
 import java.util.*;
 
@@ -15,7 +17,7 @@ import java.util.*;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 
 @Entity
-@Table(name = "user_tb", uniqueConstraints = @UniqueConstraint(name
+@Table(name = "user", uniqueConstraints = @UniqueConstraint(name
         = "uk_user_email", columnNames = "email"))
 public class User {
 
@@ -33,6 +35,7 @@ public class User {
     private String email;
 
     @Column(nullable =  false)
+    @CreatedDate
     private LocalDateTime signDate;
 
     // 주문과의 관계

@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @Getter
 
 @Entity
-@Table(name = "payment_tb")
+@Table(name = "payment")
 
 public class Payment {
 
@@ -30,7 +30,7 @@ public class Payment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int paymentId;
 
-    @OneToMany(mappedBy = "Payment", cascade = CascadeType.REMOVE,orphanRemoval = true)
+    @OneToMany(mappedBy = "payment", cascade = CascadeType.REMOVE,orphanRemoval = true)
     private List <OrderProduct> item = new ArrayList<>();
 
     @Column(nullable = false)

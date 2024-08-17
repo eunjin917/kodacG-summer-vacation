@@ -12,7 +12,7 @@
     @Getter
 
     @Entity
-    @Table(name = "option_tb",
+    @Table(name = "option",
             uniqueConstraints = @UniqueConstraint(name =" uk_option_name",columnNames ="optionName"))
     public class Option {
 

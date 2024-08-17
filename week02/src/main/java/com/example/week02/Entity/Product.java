@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 @Getter
 
 @Entity
-@Table(name = "product_tb",uniqueConstraints = @UniqueConstraint(name = "uk_product_name",
+@Table(name = "product",uniqueConstraints = @UniqueConstraint(name = "uk_product_name",
 columnNames = "productName"))
 public class Product {
 

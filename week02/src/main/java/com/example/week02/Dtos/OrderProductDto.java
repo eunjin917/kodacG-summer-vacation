@@ -11,7 +11,6 @@ import com.example.week02.Entity.OrderProduct;
 // 주문 조회 기능 정도만 구현해도 될거 같은데 ?
 // 옵션.
 
-import com.example.week02.Entity.OrderProduct;
 
 public class OrderProductDto {
 
