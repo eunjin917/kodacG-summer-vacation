@@ -37,6 +37,8 @@
 
 데이터 조회간에 실제 DB가 연결되어 있지 않았기 때문에 h2 DB를 통해서 임의로 값을 저장했고 postman을 통한 조회 API에
 어떤 데이터가 반환되고 어떤 상태코드가 반환되는 지를 주로 확인했다. 
+![image](https://github.com/user-attachments/assets/98f0b7be-83b0-4b75-ba68-fa9e1629dd7b)
+H2 DB에 값을 저장한 상태
 
 
 
