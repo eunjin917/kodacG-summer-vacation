@@ -30,7 +30,7 @@ public class Payment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int paymentId;
+    private long paymentId;
 
     @OneToMany(mappedBy = "payment", cascade = CascadeType.REMOVE,orphanRemoval = true)
     private List <OrderProduct> item = new ArrayList<>();

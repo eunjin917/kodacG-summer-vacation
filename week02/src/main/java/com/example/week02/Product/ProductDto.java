@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 // 조회
 public record ProductDto(
-        int productId,
+        long productId,
         String productName,
         String productDesc,
         String image,

@@ -19,7 +19,7 @@
 
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private int optionId;
+        private long optionId;
 
         @Column(nullable = false)
         private String optionName;

@@ -8,7 +8,7 @@ package com.example.week02.Order;
 //- option_description    옵션 설명
 
 
-public record OrderProductDto(int orderId,
+public record OrderProductDto(long orderId,
                               String productName,
                               String optionName,
                               int quantity,

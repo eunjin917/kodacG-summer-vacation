@@ -23,7 +23,7 @@ public class Order {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int OrderId;
+    private long OrderId;
 
     @Column(columnDefinition = "TEXT", nullable = false)
     private String delivery;

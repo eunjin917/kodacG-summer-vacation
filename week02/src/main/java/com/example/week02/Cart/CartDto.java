@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 //- total_price     총 금액
 
 // 장바구니 조회
-public record CartDto(int cartId, List<Integer> itemId, int totalPrice, LocalDateTime cartDate) {
+public record CartDto(long cartId, List<Long> itemId, int totalPrice, LocalDateTime cartDate) {
     public CartDto(Cart cart) {
         this(cart.getCartId(),
                 cart.getItems().stream().map(OrderProduct::getOrderProductId).collect(Collectors.toList()),

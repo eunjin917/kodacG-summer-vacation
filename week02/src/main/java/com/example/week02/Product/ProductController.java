@@ -13,7 +13,7 @@ public class ProductController {
 
     @GetMapping("/products/{product_id}") // 특정 상품을 조회
 
-    public ProductDto productResponse(@PathVariable("product_id") int product_id) {
+    public ProductDto productResponse(@PathVariable("product_id") long product_id) {
         return  productService.toConvertDto(productService.searchProduct(product_id));
 
     }

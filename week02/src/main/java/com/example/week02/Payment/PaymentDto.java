@@ -7,11 +7,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 
-
 // 결제 내역 조회
 
-public record PaymentDto(int paymentId,
-                         List<Integer> itemId,
+public record PaymentDto(Long paymentId,
+                         List<Long> itemId,
                          LocalDateTime paymentDate,
                          String method,
                          String status)

@@ -25,7 +25,7 @@
 
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private int cartId;
+        private long cartId;
 
         @Column(nullable = false)
         private LocalDate cartDate;

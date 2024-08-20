@@ -20,7 +20,7 @@ public class ProductService {
 
     // 특정 상품을 조회
     // 우리가 전달하는 것은 번호
-    public Product searchProduct(int id){
+    public Product searchProduct(long id){
         Optional<Product> oq = productRepository.findById(id);
         if(oq.isPresent()){
             return oq.get();
