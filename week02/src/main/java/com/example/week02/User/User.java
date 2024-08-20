@@ -1,10 +1,15 @@
 package com.example.week02.User;
 
 import jakarta.persistence.*;
-import lombok.Builder;
+import lombok.*;
 
 import java.time.LocalDate;
 
+@Getter
+@Setter // 추가하여 자동으로 Getter와 Setter 생성
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@Entity
+@Table(name = "user_tb")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
