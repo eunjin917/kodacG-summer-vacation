@@ -14,7 +14,7 @@ import java.time.*;
 public record OrderDto(
 
         long userId,
-        int orderId,
+        long orderId,
         LocalDateTime orderDate,
         String delivery,
         String deliveryStatus)
