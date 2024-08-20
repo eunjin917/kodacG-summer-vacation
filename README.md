@@ -41,14 +41,25 @@
 H2 DB에 값을 저장한 상태
 
 
+**특정 상품 조회**
+
+먼저 상품이 등록되어 있지 않을 경우   
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/188962cf-179a-428e-b335-0fb31d4d5514/637455fa-b278-49d7-b392-a101d5c88c1c/image.png)
+
+위 사진처럼 h2데이터베이스에 상품을 등록한 경우 - postman   
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/188962cf-179a-428e-b335-0fb31d4d5514/42440876-d000-46b8-9aa0-58e35ed85176/image.png)
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/188962cf-179a-428e-b335-0fb31d4d5514/8b493193-7f7d-4853-b58d-592454f2d0f4/image.png)
 
 
+**전체 상품 조회**   
+param으로 들어가는 page 값은 0을 디폴트값으로 가지게 하고 jpa에서 지원하는 페이지네이션을 통해서 코드를 작성했다    
+한 페이지에 10개의 상품이 들어가도록 했고 h2데이터베이스에 확인을 위해 총 11개의 상품을 등록했다    
 
+page=0 첫번째 페이지 조회   
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/188962cf-179a-428e-b335-0fb31d4d5514/7d568cfc-239a-4e9d-9d65-7d6a97f411b7/image.png)
 
-
-
-
-
+page=1 두번째 페이지 조회   
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/188962cf-179a-428e-b335-0fb31d4d5514/da7a37de-630d-492f-acb2-f6648a3a4ff8/image.png)
 
 
 -> 초기설정에 스프링 시큐리티가 적용되어 있어 로그인 페이지로 계속 리다이렉트 되는 현상이 발생해서 제거했다 
