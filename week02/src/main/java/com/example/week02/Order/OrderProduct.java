@@ -1,4 +1,4 @@
-package com.example.week02.Entity;
+package com.example.week02.Order;
 
 //- order_product_id(pk)
 //- order_id(fk)          주문 번호
@@ -7,6 +7,9 @@ package com.example.week02.Entity;
 //- total_price           총 주문 금액
 //- option_description    옵션 설명
 
+import com.example.week02.Cart.Cart;
+import com.example.week02.Payment.Payment;
+import com.example.week02.Product.Product;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;

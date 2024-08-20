@@ -1,6 +1,4 @@
-    package com.example.week02.Dtos;
-    import com.example.week02.Entity.User;
-    import lombok.Getter;
+    package com.example.week02.User;
 
 
     // DTO에는 로직을 포함시키지 않는다 그저 전송할 데이터만을 담는다
@@ -10,15 +8,15 @@
 
     // 엔티티 객체를 통해서 Get 메소드로 값을 저장하는 방식
 
-    public class UserDto{
-        public record UserInfo(
+
+        public record UserDto(
 
                 int userId,
                 String userName,
                 String email,
                 LocalDateTime signDate){
 
-            public UserInfo(User user){
+            public UserDto(User user){
 
                 this(
                         user.getUserId(),
@@ -27,5 +25,5 @@
                         user.getSignDate());
             }
         }
-    }
+
 

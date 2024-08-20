@@ -1,4 +1,4 @@
-package com.example.week02.Entity;
+package com.example.week02.User;
 
 //- user_id(pk) 유저 아이디
 //- user_name   유저 이름
@@ -6,6 +6,7 @@ package com.example.week02.Entity;
 //- email       이메일
 //- sign_date   가입일자
 
+import com.example.week02.Order.Order;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
