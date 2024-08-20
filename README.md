@@ -44,6 +44,7 @@ H2 DB에 값을 저장한 상태
 **특정 상품 조회**
 
 먼저 상품이 등록되어 있지 않을 경우   
+![image](https://github.com/user-attachments/assets/9fe671c1-11ad-4ff0-b7fc-d7bfb83d5d43)
 
 
 위 사진처럼 h2데이터베이스에 상품을 등록한 경우 - postman   
