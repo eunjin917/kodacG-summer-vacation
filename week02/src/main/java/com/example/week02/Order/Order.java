@@ -1,4 +1,4 @@
-package com.example.week02.Entity;
+package com.example.week02.Order;
 
 
 //  order_id(pk)     주문 번호
@@ -7,6 +7,7 @@ package com.example.week02.Entity;
 //- delivery         배송지
 //- delivery_status 배송 상태
 
+import com.example.week02.User.User;
 import jakarta.persistence.*;
 import lombok.*;
 import java.time.LocalDateTime;
@@ -22,7 +23,7 @@ public class Order {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int OrderId;
+    private long OrderId;
 
     @Column(columnDefinition = "TEXT", nullable = false)
     private String delivery;

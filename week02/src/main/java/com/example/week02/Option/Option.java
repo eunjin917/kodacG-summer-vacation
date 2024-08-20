@@ -1,10 +1,11 @@
-    package com.example.week02.Entity;
+    package com.example.week02.Option;
 
     //- option_id(pk)     옵션의 아이디
     //- option_name      옵션 이름(예 빨간색, OO추가)
     //- stock            재고 수량
     //- option_price   옵션가격
 
+    import com.example.week02.Product.Product;
     import jakarta.persistence.*;
     import lombok.*;
 
@@ -18,7 +19,7 @@
 
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private int optionId;
+        private long optionId;
 
         @Column(nullable = false)
         private String optionName;

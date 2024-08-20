@@ -1,4 +1,4 @@
-package com.example.week02.Entity;
+package com.example.week02.Payment;
 
 //- payment_id(pk)     결제 아이디
 //- order_product_id(fk) 주문 번호
@@ -8,6 +8,8 @@ package com.example.week02.Entity;
 //- payment_status     결제 상태
 
 import java.util.*;
+
+import com.example.week02.Order.OrderProduct;
 import jakarta.persistence.Entity;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
@@ -28,7 +30,7 @@ public class Payment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int paymentId;
+    private long paymentId;
 
     @OneToMany(mappedBy = "payment", cascade = CascadeType.REMOVE,orphanRemoval = true)
     private List <OrderProduct> item = new ArrayList<>();

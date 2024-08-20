@@ -1,10 +1,11 @@
-    package com.example.week02.Entity;
+    package com.example.week02.Cart;
 
     //- cart_id(pk)    장바구니 번호
     //- order_product_id(fk)  주문상품 아이디 이걸로 유저 아이디 그냥 가져올 수 있을듯?
     //- cart_date       장바구니에 담은 일시
     //- total_price     총 금액
 
+    import com.example.week02.Order.OrderProduct;
     import jakarta.persistence.*;
     import lombok.AccessLevel;
     import lombok.Getter;
@@ -24,7 +25,7 @@
 
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private int cartId;
+        private long cartId;
 
         @Column(nullable = false)
         private LocalDate cartDate;

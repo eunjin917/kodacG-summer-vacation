@@ -1,4 +1,4 @@
-package com.example.week02.Entity;
+package com.example.week02.Product;
 
 //- product_id(pk)   상품 아이디
 // - option_id(fk)
@@ -7,14 +7,14 @@ package com.example.week02.Entity;
 //- price            가격
 //- description      상품 설명
 
-import com.example.week02.Dtos.OptionDto;
+import com.example.week02.Option.Option;
+import com.example.week02.Order.OrderProduct;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import java.util.*;
-import java.util.stream.Collectors;
 
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
@@ -26,7 +26,7 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int productId;
+    private long productId;
 
     @Column(columnDefinition = "TEXT", nullable = false)
     private String productName;
@@ -39,9 +39,6 @@ public class Product {
 
     @Column(nullable = false)
     private String image;
-
-    @Column(nullable = false)
-    private int page;
 
     // 옵션과의 관계
     @OneToMany(mappedBy = "product", cascade = CascadeType.REMOVE, orphanRemoval = true)
