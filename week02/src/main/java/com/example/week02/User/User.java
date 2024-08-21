@@ -1,10 +1,15 @@
-package com.example.week02;
+package com.example.week02.User;
 
 import jakarta.persistence.*;
-import lombok.Builder;
+import lombok.*;
 
-import java.util.Date;
+import java.time.LocalDate;
 
+@Getter
+@Setter // 추가하여 자동으로 Getter와 Setter 생성
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@Entity
+@Table(name = "user_tb")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,17 +25,14 @@ public class User {
     private String email;
 
     @Column(nullable = false)
-    @Temporal(TemporalType.DATE)
-    private Date sign_date;
+    private LocalDate sign_date;
 
     @Builder
-    public User(String user_id, String username, String password, String email, Date sign_date) {
+    public User(String user_id, String username, String password, String email, LocalDate sign_date) {
         this.user_id = user_id;
         this.username = username;
         this.password = password;
         this.email = email;
         this.sign_date = sign_date;
     }
-
-
 }

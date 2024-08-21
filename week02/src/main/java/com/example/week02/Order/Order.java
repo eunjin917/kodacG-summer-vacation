@@ -1,5 +1,6 @@
-package com.example.week02;
+package com.example.week02.Order;
 
+import com.example.week02.User.User;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -44,5 +45,4 @@ public class Order {
         this.total_amount = total_amount;
         this.delivery_state = delivery_state;
     }
-}
 }
