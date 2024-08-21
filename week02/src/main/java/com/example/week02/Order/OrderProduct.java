@@ -1,6 +1,6 @@
 package com.example.week02.Order;
 
-import com.example.week02.Product;
+import com.example.week02.Product.Product;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;

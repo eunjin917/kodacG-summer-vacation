@@ -1,15 +1,13 @@
 package com.example.week02.Option;
 
-import com.example.week02.Product;
+import com.example.week02.Product.Product;
 import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.math.BigDecimal;
 
 @Getter
+@Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Entity
 @Table(name = "option_tb")
@@ -27,6 +25,7 @@ public class Option {
 
     @Column(nullable = true, precision = 10, scale = 2)
     private BigDecimal option_price;
+
 
     @Builder
     public Option(String option_id, Product product, String option_name, BigDecimal option_price) {
